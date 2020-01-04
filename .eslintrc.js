@@ -36,6 +36,8 @@ module.exports = {
     'func-names': 0,
     'implicit-arrow-linebreak': 0,
     'no-confusing-arrow': 0,
+    'no-const-assign': "warn",
+    'no-this-before-super': "warn",
     'no-console': 0,
     'no-nested-ternary': 0,
     'no-param-reassign': 0,
