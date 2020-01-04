@@ -5,6 +5,17 @@ const router   = express.Router();
 
 module.exports = router;
 
+
+router.get('/', (req, res) => {
+  User.find({}, (err, users) => {
+    const userMap = {};
+    users.forEach((user) => {
+      userMap[user.id] = user;
+    });
+    res.send(userMap);
+  });
+});
+
 router.post('/checkusername', (req, res) => {
   const username = req.body.username.toLowerCase();
 

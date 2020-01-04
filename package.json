@@ -67,6 +67,7 @@
     "enzyme-adapter-react-16": "^1.15.1",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
+    "faker": "^4.1.0",
     "history": "^4.10.1",
     "immutability-helper": "^3.0.1",
     "json-style-converter": "^1.0.3",
