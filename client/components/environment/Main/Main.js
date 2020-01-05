@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import * as R from 'ramda';
 
 import { attemptGetUser } from '_thunks/user';
+import { attemptGetContributors } from '_thunks/users';
 
 import WelcomePage from '_pages/WelcomePage';
 import LoginPage from '_pages/LoginPage';
@@ -22,6 +23,12 @@ export default function Main({ location }) {
   const dispatch = useDispatch();
   const { alerts } = useSelector(R.pick(['alerts']));
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    dispatch(attemptGetContributors())
+      .then(() => console.log('users data has loaded'))
+      .catch(R.identity);
+  }, []);
 
   useEffect(() => {
     dispatch(attemptGetUser())
