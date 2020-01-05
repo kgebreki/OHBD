@@ -1,8 +1,8 @@
 export const GET_USERS = 'GET_USERS';
 
-export function listUsers(users) {
+export function listUsers(contributors) {
   return {
     type: GET_USERS,
-    users,
+    contributors,
   };
 }
