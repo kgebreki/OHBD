@@ -8,11 +8,9 @@ import * as R from 'ramda';
 import { attemptGetUser } from '_thunks/user';
 import { attemptGetContributors } from '_thunks/users';
 
-import WelcomePage from '_pages/WelcomePage';
 import LoginPage from '_pages/LoginPage';
 import RegisterPage from '_pages/RegisterPage';
 import HomePage from '_pages/HomePage';
-import TodoPage from '_pages/TodoPage';
 import SettingsPage from '_pages/SettingsPage';
 import LostPage from '_pages/LostPage';
 
@@ -29,7 +27,6 @@ export default function Main({ location }) {
       .then(() => console.log('users data has loaded'))
       .catch(R.identity);
   }, []);
-
   useEffect(() => {
     dispatch(attemptGetUser())
       .then(() => setLoading(false))
@@ -46,11 +43,9 @@ export default function Main({ location }) {
       <Navigation pathname={location.pathname} />
       <div className="main">
         <Switch>
-          <Route exact path="/" component={WelcomePage} />
+          <Route exact path="/" component={HomePage} />
           <Route path="/login" component={LoginPage} />
           <Route path="/register" component={RegisterPage} />
-          <Route path="/home" component={HomePage} />
-          <Route path="/todo" component={TodoPage} />
           <Route path="/settings" component={SettingsPage} />
           <Route path="*" component={LostPage} />
         </Switch>
