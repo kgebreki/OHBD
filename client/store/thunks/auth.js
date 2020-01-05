@@ -17,7 +17,7 @@ export const attemptLogin = user => dispatch =>
         position: 'tr',
         autoDismiss: 3,
       }));
-      dispatch(push('/home'));
+      dispatch(push('/'));
       return data;
     })
     .catch(dispatchError(dispatch));
@@ -46,7 +46,7 @@ export const attemptLogout = () => dispatch =>
         position: 'tr',
         autoDismiss: 3,
       }));
-      dispatch(push('/login'));
+      dispatch(push('/'));
       return data;
     })
     .catch(dispatchError(dispatch));
