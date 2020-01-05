@@ -18,7 +18,7 @@ export default function HomePage() {
       <div className="section">
         <div className="container">
           <h1 className="title is-1">
-            Home Page
+            Home Pag
           </h1>
         </div>
       </div>
