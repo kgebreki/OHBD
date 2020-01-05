@@ -37,12 +37,7 @@ export default function UserDropdown({ open, closeDropdown }) {
         <li className="dropdown-header">
           {user.usernameCase}
         </li>
-        <hr className="dropdown-separator" />
-        <li className="dropdown-item">
-          <Link to="/todo" onClick={closeDropdown}>
-            Todo List
-          </Link>
-        </li>
+        <hr className="dropdown-separator" />>
         <li className="dropdown-item">
           <Link to="/settings" onClick={closeDropdown}>
             Settings

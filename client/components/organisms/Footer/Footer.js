@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container">
         <div className="content has-text-centered">
           <p>
-            {`Copyright Ⓒ ${year} MERN Boilerplate. All Rights Reserved.`}
+            {`OHBD`}
           </p>
         </div>
       </div>

@@ -9,11 +9,6 @@ export default function HomePage() {
   const { user } = useSelector(R.pick(['user']));
   console.log(contributors);
 
-  useEffect(() => {
-    if (R.isEmpty(user)) {
-      dispatch(push('/login'));
-    }
-  }, []);
 
   return (
     <div className="home-page page">
