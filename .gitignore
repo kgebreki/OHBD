@@ -28,8 +28,7 @@ yarn-error.log*
 .DS_Store
 
 # Jetbrains
-.idea
-/.idea
+.idea/
 
 
 #vscode
