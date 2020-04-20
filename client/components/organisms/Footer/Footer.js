@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container">
         <div className="content has-text-centered">
           <p>
-            {`OHBD`}
+            {`Open Hearts Big Dreams`}
           </p>
         </div>
       </div>

@@ -11,6 +11,8 @@ import Button from '_atoms/Button';
 export default function Navigation({ pathname }) {
   const { user } = useSelector(R.pick(['user']));
 
+  const url = 'https://openheartsbigdreams.org/website/wp-content/uploads/2018/07/logo.png';
+  
   const [auth, setAuth] = useState(!R.isEmpty(user));
   const [open, setOpen] = useState(false);
 
@@ -52,7 +54,7 @@ export default function Navigation({ pathname }) {
         <div className="navbar-brand">
           <Link to='/' className="navbar-item" aria-label="main navigation">
             <h3 className="title is-3 logo">
-              OHBD
+            <img src={url} align="left" alt='OHBD logo' />
             </h3>
           </Link>
           <div className="navbar-brand-right">
