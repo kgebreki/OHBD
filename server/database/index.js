@@ -15,7 +15,7 @@ const createNewUsers = false;
 
 console.log(process.env.DATABASE_URL);
 
-const database = mongoose.connect(process.env.DATABASE_URL, options)
+const database = mongoose.connect('mongodb+srv://OHBD:brazzerbitchfromsheger@cluster0-43jyu.mongodb.net/test?retryWrites=true&w=majority options')
   .then(() => {
     console.log('Connected to database.');
     if (createNewUsers) {
