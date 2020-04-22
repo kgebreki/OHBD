@@ -12,6 +12,7 @@ import LoginPage from '_pages/LoginPage';
 import RegisterPage from '_pages/RegisterPage';
 import HomePage from '_pages/HomePage';
 import SettingsPage from '_pages/SettingsPage';
+import WelcomePage from '_pages/WelcomePage';
 import LostPage from '_pages/LostPage';
 
 import Navigation from '_organisms/Navigation';
@@ -47,6 +48,7 @@ export default function Main({ location }) {
           <Route path="/login" component={LoginPage} />
           <Route path="/register" component={RegisterPage} />
           <Route path="/settings" component={SettingsPage} />
+          <Route path="/welcome" component={WelcomePage} />
           <Route path="*" component={LostPage} />
         </Switch>
       </div>
